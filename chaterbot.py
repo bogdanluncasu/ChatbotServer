@@ -80,6 +80,7 @@ def ask_him(data,index):
     return "Bot> "+reply
 
 if __name__ == '__main__':
+    print "Holla"
     try:
         socketio.run(app)
     except:
