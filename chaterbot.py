@@ -1,13 +1,9 @@
-# Hatter command line version, This doesn't require Flask
 from aiml import Kernel
 from os import listdir
 import sys, processing
 from flask import Flask, request
-from flask.ext.socketio import SocketIO, emit
-
-app = Flask(__name__)
-app.config['SECRET_KEY'] = 'THISISTHESECRETKEY'
-socketio = SocketIO(app)
+from geventwebsocket import WebSocketServer, WebSocketApplication, Resource
+from collections import OrderedDict
 
 def set_personality(bot):
     bot.setBotPredicate("name", "PCH")
@@ -28,60 +24,57 @@ def set_personality(bot):
 
 
 files = listdir('standard')
-bot = substs = None
-bots=[]
+
+def ask_him(data,index,bot,substs):
+    question = data
+    question = processing.apply_substitutions(question, substs)
+    reply = bot.respond(question)
+    return "Bot> "+reply
+
+class EchoApplication(WebSocketApplication):
+
+    def on_open(self):
+        print "Connection opened"
+
+        self.bot = Kernel()
+        for file in files:
+            self.bot.learn('standard/' + file)
+
+        set_personality(self.bot)
+        self.substs = processing.get_substitutions()
+        self.respon = ' '
+        self.ws.send( "Bot> Hello , I am PCH the bot. Good to see you. Type \"bye\" to exit")
+
+    def on_message(self, message):
+        if self.bot is None or self.substs is None or message is None:
+            return "Hello"
+        reply = ask_him(message, 0,self.bot,self.substs)
+        self.ws.send(reply)
+
+    def on_close(self, reason):
+        print reason
+        self.ws.send("Bye")
+
+WebSocketServer(
+    ('', 8000),
+    Resource(OrderedDict({'/': EchoApplication}))
+).serve_forever()
+
+app = Flask(__name__)
+app.config['SECRET_KEY'] = 'THISISTHESECRETKEY'
+
+
+
+
 
 @app.route('/')
 def welcome():
     return "Welcome",200
 
-@socketio.on('init')
-def init(message):
-    global bot,substs,respon
-    bot = Kernel()
-    for file in files:
-        bot.learn('standard/' + file)
 
-    if len(bots)==0:
-        bots.append(bot)
-    else:
-        assigned=false
-        for i in range(len(bots)):
-            if bots[i] is None:
-                bots[i]=bot
-                assigned=true
-                break
-        if not assigned:
-            bots.append(bot)
-
-    set_personality(bot)
-    substs = processing.get_substitutions()
-    respon = ' '
-    emit("reply",{"data":"Bot> Hello , I am PCH the bot. Good to see you. Type \"bye\" to exit","index":bots.index(bot)})
-
-@socketio.on('ask')
-def asking(message):
-    reply = ask_him(message['data'],message['index'])
-    emit('reply', {"data":reply})
-
-
-@socketio.on('disconnect')
-def disconnect(message={}):
-    if("index" in message):
-        if message["index"]!=-1:
-            bots[message["index"]]=None;
-    print('Client disconnected')
-
-
-def ask_him(data,index):
-    question = data
-    question = processing.apply_substitutions(question, substs)
-    reply = bots[index].respond(question)
-    return "Bot> "+reply
 
 if __name__ == '__main__':
-    print "Holla"
     try:
-        socketio.run(app)
+        app.run()
     except:
         pass
