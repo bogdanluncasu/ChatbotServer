@@ -1,5 +1,6 @@
 from aiml import Kernel
 from os import listdir
+import os
 import sys, processing
 from flask import Flask, request
 from geventwebsocket import WebSocketServer, WebSocketApplication, Resource
