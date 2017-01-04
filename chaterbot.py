@@ -56,7 +56,7 @@ class EchoApplication(WebSocketApplication):
         self.ws.send("Bye")
 
 WebSocketServer(
-    ('', 8000),
+    ('', int(os.environ.get("PORT", 8000))),
     Resource(OrderedDict({'/': EchoApplication}))
 ).serve_forever()
 
