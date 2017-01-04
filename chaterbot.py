@@ -5,6 +5,7 @@ import sys, processing
 from flask import Flask, request
 from geventwebsocket import WebSocketServer, WebSocketApplication, Resource
 from collections import OrderedDict
+import random
 
 def set_personality(bot):
     bot.setBotPredicate("name", "PCH")
@@ -25,33 +26,33 @@ def set_personality(bot):
 
 
 files = listdir('standard')
-
-def ask_him(data,index,bot,substs):
+bot = Kernel()
+for file in files:
+    bot.learn('standard/' + file)
+set_personality(bot)	
+substs = processing.get_substitutions()
+respon = ' '
+		
+def ask_him(data,index,bot,substs,sessionId):
     question = data
     question = processing.apply_substitutions(question, substs)
-    reply = bot.respond(question)
+    reply = bot.respond(question,sessionId)
     return "Bot> "+reply
 
 class EchoApplication(WebSocketApplication):
 
     def on_open(self):
         print "Connection opened"
-
-        self.bot = Kernel()
-        for file in files:
-            self.bot.learn('standard/' + file)
-
-        set_personality(self.bot)
-        self.substs = processing.get_substitutions()
-        self.respon = ' '
+        self.sessionId=random.randint(0,99999999)
         self.ws.send( "Bot> Hello , I am PCH the bot. Good to see you. Type \"bye\" to exit")
+
 
     def on_message(self, message):
         if message!="":
-            if self.bot is None or self.substs is None or message is None:
+            if bot is None or substs is None or message is None:
                 pass
             else:
-                reply = ask_him(message, 0,self.bot,self.substs)
+                reply = ask_him(message, 0,bot,substs,self.sessionId)
                 self.ws.send(reply)
 
     def on_close(self, reason):
