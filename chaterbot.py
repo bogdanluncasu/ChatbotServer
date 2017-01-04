@@ -49,9 +49,10 @@ class EchoApplication(WebSocketApplication):
     def on_message(self, message):
         if message!="":
             if self.bot is None or self.substs is None or message is None:
-                return "Hello"
-            reply = ask_him(message, 0,self.bot,self.substs)
-            self.ws.send(reply)
+                pass
+            else:
+                reply = ask_him(message, 0,self.bot,self.substs)
+                self.ws.send(reply)
 
     def on_close(self, reason):
         print reason
