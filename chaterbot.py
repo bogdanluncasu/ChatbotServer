@@ -47,10 +47,11 @@ class EchoApplication(WebSocketApplication):
         self.ws.send( "Bot> Hello , I am PCH the bot. Good to see you. Type \"bye\" to exit")
 
     def on_message(self, message):
-        if self.bot is None or self.substs is None or message is None:
-            return "Hello"
-        reply = ask_him(message, 0,self.bot,self.substs)
-        self.ws.send(reply)
+        if message!="":
+            if self.bot is None or self.substs is None or message is None:
+                return "Hello"
+            reply = ask_him(message, 0,self.bot,self.substs)
+            self.ws.send(reply)
 
     def on_close(self, reason):
         print reason
