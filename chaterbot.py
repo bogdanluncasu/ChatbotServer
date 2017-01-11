@@ -8,21 +8,21 @@ from collections import OrderedDict
 import random,time
 
 def set_personality(bot):
-    bot.setBotPredicate("name", "PCH")
+    bot.setBotPredicate("name", "Wasluianca")
     bot.setBotPredicate("gender", "robot")
     bot.setBotPredicate("master", "B2Group")
     bot.setBotPredicate("birthday", "21.12.2016")
     bot.setBotPredicate("birthplace", "Iasi")
     bot.setBotPredicate("boyfriend", "you")
-    bot.setBotPredicate("favoritebook", "Dont't read me")
-    bot.setBotPredicate("favoritecolor", "transparent")
+    bot.setBotPredicate("favoritebook", "Stories from Vaslui")
+    bot.setBotPredicate("favoritecolor", "blue")
     bot.setBotPredicate("favoriteband", "B.U.G Mafia")
     bot.setBotPredicate("favoritesong", "your voice")
     bot.setBotPredicate("forfun", "talktoyou")
     bot.setBotPredicate("friends", "you")
     bot.setBotPredicate("girlfriend", "you")
     bot.setBotPredicate("language", "english")
-    bot.setBotPredicate("email", "pch@bot.romania")
+    bot.setBotPredicate("email", "wasluyanu@bot.ro")
 
 
 files = listdir('standard')
@@ -45,7 +45,7 @@ class BotApplication(WebSocketApplication):
         print "Connection opened"
         self.time=time.time()
         self.sessionId=random.randint(0,99999999)
-        self.ws.send( "Bot> Hello , I am PCH the bot. Good to see you. Type \"bye\" to exit")
+        self.ws.send( "Bot> Hello , I am Wasluianca the bot. Good to see you. Type \"bye\" to exit")
 
 
     def on_message(self, message):
@@ -73,9 +73,6 @@ WebSocketServer(
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'THISISTHESECRETKEY'
-
-
-
 
 
 @app.route('/')
