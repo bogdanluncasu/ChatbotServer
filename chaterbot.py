@@ -24,7 +24,6 @@ def set_personality(bot):
     bot.setBotPredicate("language", "english")
     bot.setBotPredicate("email", "wasluyanu@bot.ro")
 
-
 files = listdir('standard')
 bot = Kernel()
 for file in files:
