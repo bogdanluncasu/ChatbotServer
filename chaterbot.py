@@ -56,7 +56,7 @@ class BotApplication(WebSocketApplication):
                 reply = ask_him(message, 0,bot,substs,self.sessionId)
                 self.time=time.time()
                 self.ws.send(reply)
-        elif time.time() - self.time > 20:
+        elif time.time() - self.time > 30:
             reply = ask_him("INACTIVITATE", 0, bot, substs, self.sessionId)
             self.time = time.time()
             self.ws.send(reply)
