@@ -5,7 +5,7 @@ import sys, processing
 from flask import Flask, request
 from geventwebsocket import WebSocketServer, WebSocketApplication, Resource
 from collections import OrderedDict
-import random
+import random,time
 
 def set_personality(bot):
     bot.setBotPredicate("name", "PCH")
@@ -39,10 +39,11 @@ def ask_him(data,index,bot,substs,sessionId):
     reply = bot.respond(question,sessionId)
     return "Bot> "+reply
 
-class EchoApplication(WebSocketApplication):
+class BotApplication(WebSocketApplication):
 
     def on_open(self):
         print "Connection opened"
+        self.time=time.time()
         self.sessionId=random.randint(0,99999999)
         self.ws.send( "Bot> Hello , I am PCH the bot. Good to see you. Type \"bye\" to exit")
 
@@ -53,7 +54,13 @@ class EchoApplication(WebSocketApplication):
                 pass
             else:
                 reply = ask_him(message, 0,bot,substs,self.sessionId)
+                self.time=time.time()
                 self.ws.send(reply)
+        elif time.time() - self.time > 20:
+            reply = ask_him("INACTIVITATE", 0, bot, substs, self.sessionId)
+            self.time = time.time()
+            self.ws.send(reply)
+
 
     def on_close(self, reason):
         print reason
@@ -61,7 +68,7 @@ class EchoApplication(WebSocketApplication):
 
 WebSocketServer(
     ('', int(os.environ.get("PORT", 8000))),
-    Resource(OrderedDict({'/': EchoApplication}))
+    Resource(OrderedDict({'/': BotApplication}))
 ).serve_forever()
 
 app = Flask(__name__)
