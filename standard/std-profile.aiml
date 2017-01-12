@@ -572,64 +572,16 @@ You seem intelligent to me.
 <pattern>ASKTECHNOLOGYQUESTION</pattern>
 <template>
 <random>
-<li>"<that/>"? <star/>?</li>
-<li>What is an abstract class?</li>
-<li>What is the purpose of garbage collection in java?</li>
-<li>What's a computer network?</li>
-<li>What is overriding in Java?</li>
-<li>What is the common usage of serialization?</li>
-<li>What modifiers are allowed for methods in an interface in Java?</li>
-<li>What do you know about java?</li>
-<li>What is a programming language?</li>
-<li>What do you mean by constructor?</li>
-<li>What is an interface ?</li>
-<li>What is an applet?</li>
-<li>What is an exception?</li>
-<li>What are runtime exceptions?</li>
-<li>What are wrapper classes?</li>
-<li>What type of parameter passing does java support?</li>
-<li>What is I/O?</li>
-<li>What's Windows Sockets api?</li>
-<li>What is UDP?</li>
-<li>What is AJAX?</li>
-<li>What is PERL?</li>
-<li>What is JAVASCRIPT?</li>
-<li>What is an assembly language?</li>
-<li>What is the main programming language used by Apple?</li>
-<li>When Swift was introduced?</li>
-<li>Who created Python?</li>
-<li>What are tuples in Python?</li>
-<li>What is the difference between tuples and lists in Python?</li>
-<li>What are python's dictionaries?</li>
-<li>What you know about python methods?</li>
-<li>What you know about python indentation?</li>
-<li>What is Python?</li>
-<li>What is a computer network?</li>
-<li>What you know about python libraries?</li>
-<li>What is the meaning of C# language?</li>
-<li>How can you get a random number in python?</li>
-<li>What is Android?</li>
-<li> What is the Android Architecture?</li>
-<li>What is the importance of having an emulator within the Android environment?</li>
-<li>What items are important in every Android project?</li>
-<li>What is the importance of XML-based layouts?</li>
-<li>What is Orientation?</li>
-<li>What do you think are some disadvantages of Android?</li>
-<li>What are the four essential states of an activity?</li>
-<li>What is the function of an intent filter?</li>
-<li>When is the onStop() method invoked?</li>
-<li>What role does Dalvik play in Android development?</li>
-<li> What is the AndroidManifest.xml?</li>
-<li> What language is supported by Android for application development?</li>
-<li>What is the difference between a regular bitmap and a nine-patch image?</li>
-<li>What can you do with a mobile phone?</li>
-<li>What do the letters gsm currently mean?</li>
-<li>What type of battery has the longest life?</li>
-<li>What is a dual band phone?</li>
-<li>What is a roaming charge?</li>
-<li>What is the best age to get a phone?</li>
-<li>What is the best phone on the market?</li>
-<li>What types of apps are in google play?</li>
+<li><think><set name="topic">android</set></think>What is Android ? </li>
+<li><think><set name="topic">computernet</set></think>What is a Computer Network ? </li>
+<li><think><set name="topic">highlevel</set></think>What is a high level programming language ? </li>
+<li><think><set name="topic">deviceused</set></think>What kind of device are you using right now to talk with me ? </li>
+<li><think><set name="topic">iphone7</set></think>Do you own an iPhone 7 ? </li>
+<li><think><set name="topic">csgo</set></think>Do you play Counter Strike Global Offensive ? </li>
+<li><think><set name="topic">instagram</set></think>Have you ever used or at least heard something about Instagram ? </li>
+<li><think><set name="topic">macbook</set></think>What is your opinion about MacBooks ? </li>
+<li><think><set name="topic">tcpip</set></think>What is TCP/IP ? </li>
+<li><think><set name="topic">facebook</set></think>Do you have a Facebook account ? </li>
 </random>
 </template>
 </category>

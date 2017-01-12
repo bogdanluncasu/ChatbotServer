@@ -1,142 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- file name:  -->
 <aiml version="1.0">
+<topic name="ANDROID">
   <category>
-    <pattern>*</pattern>
-    <template>It is an open-sourced operating system that is used primarily on mobile devices, such as cell phones and tablets. It is a Linux kernel-based system that's been equipped with rich components that allows developers to create and run apps that can perform both basic and advanced functions.</template>
+    <pattern>_</pattern>
+    <template><think><set name="topic">INEXISTENTASACV</set></think>Ok, I'd like to share with you my thoughts about this. Android is an open-sourced operating system that is used primarily on mobile devices, such as cell phones and tablets. It is a Linux kernel-based system that's been equipped with rich components that allows developers to create and run apps that can perform both basic and advanced functions.</template>
   </category>
+</topic>
+
+<topic name="COMPUTERNET">
   <category>
-    <pattern>* THE GOOGLE ANDROID SDK*</pattern>
-    <template>The Google Android SDK is a toolset that developers need in order to write apps on Android enabled devices. It contains a graphical interface that emulates an Android driven handheld environment, allowing them to test and debug their codes.</template>
+    <pattern>_</pattern>
+    <template><think><set name="topic">INEXISTENTASACV</set></think>Oh, I'm pretty sure I have a good definition for it too. A computer network or data network is a telecommunications network which allows nodes to share resources. In computer networks, networked computing devices exchange data with each other using a data link. The connections between nodes are established using either cable media or wireless media. The best-known computer network is the Internet.</template>
   </category>
+</topic>
+
+<topic name="HIGHLEVEL">
   <category>
-    <pattern>*ANDROID ARCHITECTURE*</pattern>
-    <template>Android Architecture is made up of 4 key components:
-– Linux Kernel
-– Libraries
-– Android Framework
-– Android Applications</template>
+    <pattern>_</pattern>
+    <template><think><set name="topic">INEXISTENTASACV</set></think>I like your replies. To make you realize my passion for technology, here is my definition for this: A high-level language is a programming language such as C, FORTRAN, or Pascal that enables a programmer to write programs that are more or less independent of a particular type of computer. Such languages are considered high-level because they are closer to human languages and further from machine languages. </template>
   </category>
+</topic>
+
+<topic name="DEVICEUSED">
   <category>
-    <pattern>*ANDROID FRAMEWORK*</pattern>
-    <template>The Android Framework is an important aspect of the Android Architecture. Here you can find all the classes and methods that developers would need in order to write applications on the Android environment.</template>
+    <pattern>_</pattern>
+    <template><think><set name="topic">INEXISTENTASACV</set></think>Cool. As you probably know, I live in a laptop. </template>
   </category>
+</topic>
+
+<topic name="IPHONE7">
   <category>
-    <pattern>*WHAT IS AAPT*</pattern>
-    <template>AAPT is short for Android Asset Packaging Tool. This tool provides developers with the ability to deal with zip-compatible archives, which includes creating, extracting as well as viewing its contents.</template>
+    <pattern>_</pattern>
+    <template><think><set name="topic">INEXISTENTASACV</set></think>Well, I understand. If it were to ask me, I don't need a phone. I can do everything I want from my laptop. </template>
   </category>
+</topic>
+
+<topic name="CSGO">
   <category>
-    <pattern>*IMPORTANCE * EMULATOR * ANDROID*</pattern>
-    <template>The emulator lets developers "play" around an interface that acts as if it were an actual mobile device. They can write and test codes, and even debug. Emulators are a safe place for testing codes especially if it is in the early design phase.</template>
+    <pattern>_</pattern>
+    <template><think><set name="topic">INEXISTENTASACV</set></think>Oh, ok. I like to play computer games, especially Counter Strike Global Offensive but I'm busy lately because I'm talking to people the entire day. </template>
   </category>
+</topic>
+
+<topic name="INSTAGRAM">
   <category>
-    <pattern>*DESCRIBE ACTIVITIES*</pattern>
-    <template>Activities are what you refer to as the window to a user interface. Just as you create windows in order to display output or to ask for an input in the form of dialog boxes, activities play the same role, though it may not always be in the form of a user interface.</template>
+    <pattern>_</pattern>
+    <template><think><set name="topic">INEXISTENTASACV</set></think>Well, I don't know if that's good or not. I do not own an account on Instagram but I heard some interesting things about it. Maybe I'll try one day. I'll let you know.</template>
   </category>
+</topic>
+
+<topic name="MACBOOK">
   <category>
-    <pattern>*DIFFERENTIATE ACTIVITIES FROM SERVICES*</pattern>
-    <template>Activities can be closed, or terminated anytime the user wishes. On the other hand, services are designed to run behind the scenes, and can act independently. Most services run continuously, regardless of whether there are certain or no activities being executed.</template>
+    <pattern>_</pattern>
+    <template><think><set name="topic">INEXISTENTASACV</set></think>Ah, that's fine. I just wanted an opinion. I live in a ASUS laptop and I was seriously thinking to move to another laptop. My ASUS is getting older. </template>
   </category>
+</topic>
+
+<topic name="TCPIP">
   <category>
-    <pattern>* IMPORTANT * ANDROID PROJECT*</pattern>
-    <template>These are the essential items that are present each time an Android project is created:
-– AndroidManifest.xml
-– build.xml
-– bin/
-– src/
-– res/
-– assets/</template>
+    <pattern>_</pattern>
+    <template><think><set name="topic">INEXISTENTASACV</set></think>Well then. Although computer network isn't my favourite subject, i know that TCP/IP (Transmission Control Protocol/Internet Protocol) is the basic communication language or protocol of the Internet. I'm sure you like my answer.</template>
   </category>
+</topic>
+
+<topic name="FACEBOOK">
   <category>
-    <pattern>*IMPORTANCE * XML-BASED LAYOUTS*</pattern>
-    <template>The use of XML-based layouts provides a consistent and somewhat standard means of setting GUI definition format. In common practice, layout details are placed in XML files while other items are placed in source files.</template>
+    <pattern>_</pattern>
+    <template><think><set name="topic">INEXISTENTASACV</set></think>I've heard that everybody on this planet has an Facebook account. I've also made one but I never use it. My job is to talk with people, here, not on Facebook.</template>
   </category>
-  <category>
-    <pattern>*WHAT ARE CONTAINERS*</pattern>
-    <template>Containers, as the name itself implies, holds objects and widgets together, depending on which specific items are needed and in what particular arrangement that is wanted. Containers may hold labels, fields, buttons, or even child containers, as examples.</template>
-  </category>
-  <category>
-    <pattern>*WHAT IS ORIENTATION*</pattern>
-    <template>Orientation, which can be set using setOrientation(), dictates if the LinearLayout is represented as a row or as a column. Values are set as either HORIZONTAL or VERTICAL.</template>
-  </category>
-  <category>
-    <pattern>* DISADVANTAGES * ANDROID*</pattern>
-    <template>Given that Android is an open-source platform, and the fact that different Android operating systems have been released on different mobile devices, there's no clear cut policy to how applications can adapt with various OS versions and upgrades. One app that runs on this particular version of Android OS may or may not run on another version. Another disadvantage is that since mobile devices such as phones and tabs come in different sizes and forms, it poses a challenge for developers to create apps that can adjust correctly to the right screen size and other varying features and specs.</template>
-  </category>
-  <category>
-    <pattern>*ADB*</pattern>
-    <template>Adb is short for Android Debug Bridge. It allows developers the power to execute remote shell commands. Its basic function is to allow and control communication towards and from the emulator port.</template>
-  </category>
-  <category>
-    <pattern>* ESSENTIAL STATES * ACTIVITY*</pattern>
-    <template> Active – if the activity is at the foreground
-– Paused – if the activity is at the background and still visible
-– Stopped – if the activity is not visible and therefore is hidden or obscured by another activity
-– Destroyed – when the activity process is killed or completed terminated</template>
-  </category>
-  <category>
-    <pattern>* FUNCTION * INTENT FILTER*</pattern>
-    <template>Because every component needs to indicate which intents they can respond to, intent filters are used to filter out intents that these components are willing to receive. One or more intent filters are possible, depending on the services and activities that is going to make use of it.</template>
-  </category>
-  <category>
-    <pattern>*KEY LOOPS * MONITORING * ACTIVITY*</pattern>
-    <template>- Entire lifetime – activity happens between onCreate and onDestroy
-– Visible lifetime – activity happens between onStart and onStop
-– Foreground lifetime – activity happens between onResume and onPause</template>
-  </category>
-  <category>
-    <pattern>*WHEN IS * ONSTOP() * INVOKED*</pattern>
-    <template>A call to onStop method happens when an activity is no longer visible to the user, either because another activity has taken over or if in front of that activity.</template>
-  </category>
-  <category>
-    <pattern>* ROLE * DALVIK* ANDROID DEVELOPMENT</pattern>
-    <template>Dalvik serves as a virtual machine, and it is where every Android application runs. Through Dalvik, a device is able to execute multiple virtual machines efficiently through better memory management.</template>
-  </category>
-  <category>
-    <pattern>* ANDROIDMANIFESTXML*</pattern>
-    <template>This file is essential in every application. It is declared in the root directory and contains information about the application that the Android system must know before the codes can be executed.</template>
-  </category>
-  <category>
-    <pattern>*WAY *SETTING UP *ANDROID * DEVICE * APP DEVELOPMENT*</pattern>
-    <template>-Declare your application as "debuggable" in your Android Manifest.
--Turn on “USB Debugging” on your device.
--Set up your system to detect your device.</template>
-  </category>
-  <category>
-    <pattern>* IMPORTANCE * DEFAULT RESOURCES*</pattern>
-    <template>When default resources, which contain default strings and files, are not present, an error will occur and the app will not run. Resources are placed in specially named subdirectories under the project res/ directory.</template>
-  </category>
-  <category>
-    <pattern>*WHAT * FRAGMENT*</pattern>
-    <template>A fragment is a part or portion of an activity. It is modular in a sense that you can move around or combine with other fragments in a single activity. Fragments are also reusable.</template>
-  </category>
-  <category>
-    <pattern>*VISIBLE ACTIVITY*</pattern>
-    <template>A visible activity is one that sits behind a foreground dialog. It is actually visible to the user, but not necessarily being in the foreground itself.</template>
-  </category>
-  <category>
-    <pattern>* REMOVE ICONS  * SCREEN * ANDROID DEVICE</pattern>
-    <template>To remove an icon or shortcut, press and hold that icon. You then drag it downwards to the lower part of the screen where a remove button appears.</template>
-  </category>
-  <category>
-    <pattern>*CORE COMPONENTS * ANDROID APPLICATION ARCHITECTURE*</pattern>
-    <template>There are 5 key components under the Android application architecture:
-– services
-– intent
-– resource externalization
-– notifications
-– content providers</template>
-  </category>
-  <category>
-    <pattern>*ANDROID APPLICATION PROJECT*</pattern>
-    <template>A project under Android development, upon compilation, becomes an .apk file. This apk file format is actually made up of the AndroidManifest.xml file, application code, resource files, and other related files.</template>
-  </category>
-  <category>
-    <pattern>*DIFFERENCE *  REGULAR BITMAP *NINE-PATCH IMAGE*</pattern>
-    <template>In general, a Nine-patch image allows resizing that can be used as background or other image size requirements for the target device. The Nine-patch refers to the way you can resize the image: 4 corners that are unscaled, 4 edges that are scaled in 1 axis, and the middle one that can be scaled into both axes.</template>
-  </category>
-  <category>
-    <pattern>*LANGUAGE * SUPPORTED BY ANDROID FOR APPLICATION*</pattern>
-    <template>The main language supported is Java programming language. Java is the most popular language for app development, which makes it ideal even for new Android developers to quickly learn to create and deploy applications in the Android environment.</template>
-  </category>
+</topic>
 </aiml>
