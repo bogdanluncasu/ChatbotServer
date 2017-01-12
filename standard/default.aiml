@@ -13573,7 +13573,15 @@ I like to talk to people.
 <template>X is <get name="X"/> for you.</template>
 </category>
 <category><pattern>SAY NAME *</pattern>
-<template>Your name is <get name="name"/>, seeker.</template>
+
+<template>
+<condition name="name">
+	I don't know your name, seeker.
+</condition>
+<condition>
+Your name is <get name="name"/>, seeker.
+</condition>
+</template>
 </category>
 <category><pattern>SAY MY BOYFRIEND IS *</pattern>
 <template><random>  <li>You said his name was </li>  <li>You told me he was </li>  <li>His name is </li>  </random>  <get name="boyfriend"/>.</template>
