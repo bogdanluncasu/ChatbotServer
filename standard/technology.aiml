@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- file name:  -->
+<aiml version="1.0">
+  <category>
+    <pattern> _ ANDROID </pattern>
+    <template>All i know is that android is an open-sourced operating system that is used primarily on mobile devices, such as cell phones and tablets. It is a Linux kernel-based system that's been equipped with rich components that allows developers to create and run apps that can perform both basic and advanced functions.</template>
+  </category>
+  
+ <category>
+    <pattern> WHAT LANGUAGE IS SUPPORTED BY ANDROID FOR APPLICATION DEVELOPMENT?</pattern>
+    <template>The main language supported is Java programming language. Java is the most popular language for app development, which makes it ideal even for new Android developers to quickly learn to create and deploy applications in the Android environment.</template>
+</category>
+
+<category>
+      <pattern>HOW DO YOU REMOVE ICONS AND WIDGETS FROM THE MAIN SCREEN OF THE ANDROID DEVICE?</pattern>
+      <template> To remove an icon or shortcut, press and hold that icon. You then drag it downwards to the lower part of the screen where a remove button appears.</template>
+</category>
+
+<category>
+      <pattern>WHAT ARE APPLICATION WIDGETS IN ANDROID?</pattern>
+      <template>App Widgets are miniature application views that can embedded in other applications (such as the Home screen) and receive periodic updates. These views has referred to as Widgets in the user interface, and you can publish one with an App Widget provider.</template>
+ </category>
+ 
+  <category>
+      <pattern>DO YOU KNOW WHAT IS THE INSPIRATION SOURCE FOR ANDROID VERSIONS NAMES ? </pattern>
+      <template>Except Android 1.0 and 1.1, all the other Android versions are named after sweet treats like Jelly Bean, Ice Cream Sandwich, Honeycomb to name a few. </template>
+    </category>
+	
+<category>
+      <pattern>WHICH IS THE NAME OF THE ANDROID S LOGO CHARACTER ?</pattern>
+      <template> Most of the people think that the name of Android's logo character is also Android, but its not true.  The actual name of Android Mascot is Bugdroid.</template>
+    </category>
+
+
+ <category>
+    <pattern>_ COMPUTER NETWORK</pattern>
+    <template>A computer network is a number of computers that are connected together so that they can share information, that's all i know.</template>
+  </category>
+  <category>
+    <pattern>_ NETWORK SOCKET</pattern>
+    <template>All i know is that a network socket is one endpoint in a communication flow between two programs running over a network.</template>
+  </category>
+  <category>
+    <pattern>What does I/O stand for?</pattern>
+    <template>Oh, that's easy! I/O stands for input/output.</template>
+  </category>
+  <category>
+    <pattern>What is the best-known computer network?</pattern>
+    <template>It's funny you need to ask. The best-known computer network is the Internet.</template>
+  </category>
+  <category>
+    <pattern>What do you like about computer networks?</pattern>
+    <template>Well, I always thought that connection is the first step in a relationship and there is no connection without computer networks.</template>
+  </category>	
+  
+  
+  <category>
+    <pattern>_ IOS</pattern>
+    <template>All i know is that iOS is a mobile operating system created and developed by Apple Inc. exclusively for its hardware.</template>
+  </category>
+  <category>
+    <pattern>_ SNAPCHAT</pattern>
+    <template>All i know is that Snapchat is a mobile messaging application used to share photos, videos, text, and drawings.</template>
+  </category>
+  <category>
+    <pattern>_ YOUTUBE</pattern>
+    <template>All i know is that YouTube is an American video-sharing website headquartered in San Bruno, California.</template>
+  </category>
+  <category>
+    <pattern>_ LINKEDIN</pattern>
+    <template>All i know is that LinkedIn is a business and employment-oriented social networking service that operates via websites</template>
+  </category>
+  <category>
+    <pattern>_TWITTER</pattern>
+    <template>All i know is that Twitter is an online news and social networking service where users post and interact with messages, "tweets," restricted to 140 characters.</template>
+  </category>
+  
+  
+  
+  <category>
+    <pattern>_AUGMENTED REALITY</pattern>
+    <template>Augmented reality (AR) is a live direct or indirect view of a physical, real-world environment whose elements are augmented (or supplemented) by computer-generated sensory input such as sound, video, graphics or GPS data</template>
+  </category>
+  <category>
+    <pattern>_VIRTUAL REALITY</pattern>
+    <template>Virtual reality (VR) typically refers to computer technologies that use software to generate realistic images, sounds and other sensations that replicate a real environment (or create an imaginary setting), and simulate a user's physical presence in this environment</template>
+  </category>
+  <category>
+    <pattern>_CODE4ROMANIA</pattern>
+    <template>Code for Romania is a community of young professionals care IT SOLUTIONS AND enthusiasts with the purpose of the Company is developing a fix problems. In other words, they develop civic Applications</template>
+  </category>
+  <category>
+    <pattern>_CODECAMP</pattern>
+    <template>Codecamp is your local IT community and conference, here in Iasi, aiming for better communication among the IT people. It started small in 2009 and it grew organically, continuously fulfilling the community demand. It now consists of 10 parallel tracks with 60 sessions and almost 2000 participants</template>
+  </category>
+  
+  
+  <category><pattern>_PYTHON</pattern>
+<template><srai>Python is a widely used high-level programming language used for general-purpose programming. </srai></template>
+</category>
+<category><pattern>WHAT YOU KNOW ABOUT * PYTHON 2.0 ? </pattern>
+<template><srai>Python 2.0 was released on 16 October 2000 and had many major new features, including a cycle-detecting garbage collector and support for Unicode.</srai></template>
+</category>
+<category><pattern>IS PYTHON OPEN-SOURCE?</pattern>
+<template><srai>Python is developed under an OSI-approved open source license, making it freely usable and distributable, even for commercial use.</srai></template>
+</category>
+<category><pattern>WHAT ARE PYTHON'S DICTIONARIES ?</pattern>
+<template><srai>Python's dictionaries are kind of hash table type. They work like associative arrays or hashes found in Perl and consist of key-value pairs. </srai></template>
+</category>
+<category><pattern>WHAT IS THE DIFFERENCE BETWEEN TUPLES AND LISTS IN PYTHON ?</pattern>
+<template><srai>The main differences between lists and tuples are − Lists are enclosed in brackets ( [ ] ) and their elements and size can be changed, while tuples are enclosed in parentheses ( ( ) ) and cannot be updated. </srai></template>
+</category>
+
+<category>
+<pattern>_ANTI-VIRUS</pattern>
+<template>I can't say that is just one, but I can give you some famous ones like BITDEFENDER, AVAST and McAffe.</template>
+</category>
+
+<category>
+<pattern>What do you know about overriding?</pattern>
+<template>Interesting question...I know that this is an abbreviation use for  Universal Resource Locator.</template>
+</category>
+
+<category>
+<pattern>What does URL mean?</pattern>
+<template>From what I remember overriding  is when a class defines a method using the same name, return type, and arguments as a method in its superclass, the method in the class overrides the method in the superclass.</template>
+</category>
+
+<category>
+<pattern>How many bits is a byte?</pattern>
+<template>I think the correct answer is eight.</template>
+</category>
+
+<category>
+<pattern>_GOOGLE</pattern>
+<template>Like you also know, GOOGLE is a search engine which help you to search for information about someone or something on the Internet.</template>
+</category>
+
+
+
+  
+  
+  
+  
+</aiml>
+

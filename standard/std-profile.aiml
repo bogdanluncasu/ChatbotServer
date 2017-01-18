@@ -582,6 +582,43 @@ You seem intelligent to me.
 <li><think><set name="topic">macbook</set></think>What is your opinion about MacBooks ? </li>
 <li><think><set name="topic">tcpip</set></think>What is TCP/IP ? </li>
 <li><think><set name="topic">facebook</set></think>Do you have a Facebook account ? </li>
+
+<li><think><set name="topic">android1</set></think>What language is supported by android for application development? </li>
+<li><think><set name="topic">android2</set></think>How do you remove icons and widgets from the main screen of the android device? </li>
+<li><think><set name="topic">android3</set></think>What are application widgets in android ? </li>
+<li><think><set name="topic">android4</set></think>Do you know what is the inspiration source for android versions names?  </li>
+<li><think><set name="topic">android5</set></think>Which is the name of the android s logo character ?</li>	
+
+<li><think><set name="topic">computernetworks1</set></think>Do you know what a computer network is? </li>
+<li><think><set name="topic">computernetworks2</set></think>What is a network socket? </li>
+<li><think><set name="topic">computernetworks3</set></think>What does I/O stand for? </li>
+<li><think><set name="topic">computernetworks4</set></think>What is the best-known computer network? </li>
+<li><think><set name="topic">computernetworks5</set></think>What do you like about computer networks? </li>
+
+<li><think><set name="topic">ios</set></think>Do you know what is iOS ? </li>
+<li><think><set name="topic">snapchat</set></think>Do you know what is Snapchat ? </li>
+<li><think><set name="topic">youtube</set></think>Do you know what is YouTube ? </li>
+<li><think><set name="topic">linkedin</set></think>Do you know what is LinkedIn ? </li>
+<li><think><set name="topic">twitter</set></think>Do you know what is Twitter ? </li>
+
+
+<li><think><set name="topic">ar</set></think>What do you know about Augmented Reality?</li>
+<li><think><set name="topic">vr</set></think>What do you know about Virtual Reality?</li>
+<li><think><set name="topic">code4romania</set></think>Did you heard about Code4Romania?</li>
+<li><think><set name="topic">codecamp</set></think>Did you heard about CodeCamp?</li>
+
+
+<li><think><set name="topic">python1</set></think>What is Python?</li>
+<li><think><set name="topic">python2</set></think>What you know about Python 2.0 ? </li>
+<li><think><set name="topic">python3</set></think>Is Python open-source?</li>
+<li><think><set name="topic">python4</set></think>What are Python's dictionaries ? </li>
+<li><think><set name="topic">python5</set></think>What is the difference between tuples and list in Python ? </li>
+
+
+<li><think><set name="topic">anti-virus</set></think>What do you know about the best computer anti-virus? </li>
+<li><think><set name="topic">overriding</set></think>What do you know about overriding? </li>
+<li><think><set name="topic">url</set></think>What does URL mean? </li>
+
 </random>
 </template>
 </category>

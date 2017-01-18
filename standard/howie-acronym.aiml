@@ -1,0 +1,45 @@
+<!--
+This file includes support for "what does X stand for" questions,
+with the help of an online acronym decoder.
+-->
+
+<aiml version="1.0.1">
+
+<category>
+<pattern>WHAT DOES * STAND FOR</pattern>
+<template>
+<system>scripts/acronym.py <star/></system>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME THE ACRONYM MEANING OF *</pattern>
+<template>
+<system>scripts/acronym.py <star/></system>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME THE ACRONYM *</pattern>
+<template>
+<system>scripts/acronym.py <star/></system>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME THE ACRONYM DEFINITION OF *</pattern>
+<template>
+<system>scripts/acronym.py <star/></system>
+</template>
+</category>
+
+
+<category>
+<pattern>WHAT DOES THE ACRONYM * MEAN</pattern>
+<template>
+<system>scripts/acronym.py <star/></system>
+</template>
+</category>
+
+
+</aiml>
