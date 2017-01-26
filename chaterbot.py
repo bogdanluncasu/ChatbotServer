@@ -57,7 +57,7 @@ class BotApplication(WebSocketApplication):
                 self.time=time.time()
                 self.ws.send(reply)
         elif time.time() - self.time > 30:
-            bot.setPredicate("topic","NOTOPIC")
+            bot.setPredicate("topic","NOTOPIC",sessionID = self.sessionId )
             reply = ask_him("INACTIVITATE", 0, bot, substs, self.sessionId)
             self.time = time.time()
             self.ws.send(reply)
