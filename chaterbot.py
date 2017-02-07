@@ -34,7 +34,7 @@ substs = processing.get_substitutions()
 respon = ' '
 		
 def ask_him(data,index,bot,substs,sessionId):
-    question = data
+    question = data.decode('UTF-8')
     question = processing.apply_substitutions(question, substs)
     reply = bot.respond(question,sessionId)
     return "Bot> "+reply
